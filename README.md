@@ -70,7 +70,7 @@ You can do this by
 
 - Open your VS Code and press `CTRL + Shift + P ` and enter `git clone`
 
-- Paste the url from the reposory-
+- Paste the url from the repository
 
 - Navigate to the directory where you want to store your projects.
 
@@ -100,45 +100,38 @@ This command creates a new branch named our_vision and switches you to it.
 
 - Open the VS Code command menu (same as for git clone) and select `git checkout` our_values
 
-This command creates a new branch named feature/our-values and switches you to it.
+This command creates a new branch named our_values and switches you to it.
 
 #### Step 4 Start editing the index.html
 
 Open the index.html file in VS Code.
 
-**Partner A**: Add the following section before the closing
+**Partner A**: Add the following section before the closing `</body>` tag:
 
 ```
-</body> tag:
-<body>
     <h1>Welcome to Our Team!</h1>
     <p>This is the initial version of our About Us page.</p>
 
     <h2>Our Mission</h2>
     <p>To empower learners with practical collaboration skills through real-world projects.</p>
-</body>
 ```
 
 **Partner B**: Add the following section before the closing </body> tag (but assume Partner A and C haven't pushed their changes yet):
 ```
-<body>
     <h1>Welcome to Our Team!</h1>
     <p>This is the initial version of our About Us page.</p>
 
     <h2>Our Vision</h2>
     <p>To foster a global community of innovators working together seamlessly.</p>
-</body>
 ```
 
 **Partner C** Add the following section before the closing </body> tag (but assume Partner A and B haven't pushed their changes yet):
 ```
-<body>
     <h1>Welcome to Our Team!</h1>
     <p>This is the initial version of our About Us page.</p>
 
     <h2>Our Values</h2>
     <p>Integrity, Innovation, and Inclusivity are our core principles.</p>
-</body>
 ```
 
 Save the index.html file after making your changes.
@@ -173,9 +166,9 @@ After pushing, go to GitHub. You'll likely see a banner suggesting you create a 
 
 - Go to your forked repository on GitHub.
 
-- Click Compare & pull request next to your feature/our-vision branch.
+- Click Compare & pull request next to your our_vision branch.
 
-- Ensure the base branch is main and the compare branch is feature/our-vision.
+- Ensure the base branch is main and the compare branch is our_vision.
 
 - Give your PR a clear title (e.g., "Add Our Vision section").
 
@@ -189,9 +182,9 @@ After pushing, go to GitHub. You'll likely see a banner suggesting you create a 
 
 - Go to your forked repository on GitHub.
 
-- Click Compare & pull request next to your feature/our-values branch.
+- Click Compare & pull request next to your our_values branch.
 
-- Ensure the base branch is main and the compare branch is feature/our-values.
+- Ensure the base branch is main and the compare branch is our_values.
 
 - Give your PR a clear title (e.g., "Add Our Values section").
 
@@ -238,7 +231,7 @@ Git will now notify you of a merge conflict. Open your index.html file in VS Cod
 </body>
 ```
 
-`<<<<<<< HEAD`: Marks the beginning of the conflicting changes from your current branch (feature/our-vision).
+`<<<<<<< HEAD`: Marks the beginning of the conflicting changes from your current branch (our_vision).
 
  `=======`: Separates the changes from your branch and the incoming changes.
 
@@ -357,13 +350,13 @@ To resolve the conflict using VS Code:
 
 - Pull the latest changes from GitHub: git pull origin main or the synchronize wheel in vs code at the bottom left.
 
-Now your local main branch should reflect all merged changes from Partner A, B, and C. You can Oen index.html locally to see the combined content.
+Now your local main branch should reflect all merged changes from Partner A, B, and C. You can open index.html locally to see the combined content.
 
 ### 5. Tips for Effective Collaboration
 - Pull Frequently: Always git pull origin main on your main branch before creating a new feature branch and regularly pull changes from the main branch into your feature branch to stay updated and minimize conflicts.
 
 - Small, Frequent Commits: Make small, logical commits with clear messages. This makes it easier to track changes and debug.
 
-- Descriptive Branch Names: Use names that indicate the purpose of the branch (e.g., feature/add-login, bugfix/fix-homepage-typo).
+- Descriptive Branch Names: Use names that indicate the purpose of the branch (e.g., add-login, fix-homepage-typo).
 
 - Communicate: Talk to your team! Let them know what you're working on to avoid simultaneous edits on the same files.
