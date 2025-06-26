@@ -254,6 +254,7 @@ Choose "Accept Both Changes" to keep both "Our Mission" and "Our Vision" section
 
 Alternatively, you can manually edit the file to include both sections, removing the conflict markers, as shown below:
 
+```
 <body>
     <h1>Welcome to Our Team!</h1>
     <p>This is the initial version of our About Us page.</p>
@@ -264,7 +265,7 @@ Alternatively, you can manually edit the file to include both sections, removing
     <h2>Our Vision</h2>
     <p>To foster a global community of innovators working together seamlessly.</p>
 </body>
-
+```
 - Save the index.html file.
 
 - Stage and commit the merge resolution
@@ -295,6 +296,7 @@ Alternatively, you can manually edit the file to include both sections, removing
 
 Git will now notify you of another merge conflict. Open your index.html file in VS Code. You will see conflict markers, but this time they will include changes from both previous merges.
 
+```
 <body>
     <h1>Welcome to Our Team!</h1>
     <p>This is the initial version of our About Us page.</p>
@@ -310,6 +312,7 @@ Git will now notify you of another merge conflict. Open your index.html file in 
     <p>To foster a global community of innovators working together seamlessly.</p>
 >>>>>>> main
 </body>
+```
 
 To resolve the conflict using VS Code:
 
@@ -317,6 +320,7 @@ To resolve the conflict using VS Code:
 
 - Manually arrange them in the desired order (e.g., Mission, Vision, Values):
 
+```
 <body>
     <h1>Welcome to Our Team!</h1>
     <p>This is the initial version of our About Us page.</p>
@@ -330,7 +334,7 @@ To resolve the conflict using VS Code:
     <h2>Our Values</h2>
     <p>Integrity, Innovation, and Inclusivity are our core principles.</p>
 </body>
-
+```
 - Save the index.html file.
 
 - Stage and commit the resolved file:
